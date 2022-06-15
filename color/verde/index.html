@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="turbo-cache-control" content="no-cache">
+
+    <!-- Primary Meta Tags -->
+    <title>Verde</title>
+    <meta name="title" content="Verde">
+    <meta name="description" content="El color de la fertilidad, de la esperanza y de la burguesía." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/color/verde/">
+    <meta property="og:title" content="Verde">
+    <meta property="og:description" content="El color de la fertilidad, de la esperanza y de la burguesía.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="/color/verde/">
+    <meta property="twitter:title" content="Verde">
+    <meta property="twitter:description" content="El color de la fertilidad, de la esperanza y de la burguesía.">
+    
+    <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
+
+    <link href="/resources/css/retype.css?v=1.11.2.702071033145" rel="stylesheet" data-turbo-track="reload" />
+
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.702071033145" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.702071033145" defer></script>
+</head>
+    <body>
+        <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
+    <div class="absolute bottom-0 left-0 bg-gray-100 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
+
+    <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
+    <div class="container relative flex items-center justify-between flex-grow pr-6 md:justify-start">
+        <!-- Mobile menu button skeleton -->
+        <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center flex-shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px flex-shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+        <div v-cloak id="docs-sidebar-toggle"></div>
+
+        <!-- Logo -->
+        <div class="flex items-center justify-between h-full py-2 md:w-75">
+            <div class="flex items-center px-2 md:px-6">
+                <a id="docs-site-logo" href="/" class="flex items-center leading-snug text-xl">
+                    <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Tópicos de UXD</span>
+                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
+            </div>
+
+            <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
+        </div>
+
+        <div class="flex justify-between md:flex-grow">
+            <!-- Top Nav -->
+            <nav class="hidden md:flex">
+    <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+        <li class="md:mr-6">
+            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://retype.com/guides/getting-started/">Getting Started</a>
+        </li>
+    </ul>
+</nav>
+
+            <!-- Header Right Skeleton -->
+            <div v-cloak class="flex justify-end flex-grow skeleton">
+
+                <!-- Search input mock -->
+                <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
+                    <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                    </div>
+
+                    <input class="w-full h-10 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 placeholder-gray-400 dark:placeholder-dark-400"
+                    style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search" />
+                </div>
+
+                <!-- Mobile search button mock -->
+                <div class="flex items-center justify-center w-10 h-10 lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                </div>
+
+                <!-- Dark mode switch placehokder -->
+                <div class="w-10 h-10 lg:ml-2"></div>
+
+                <!-- History button mock -->
+                <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
+                </div>
+            </div>
+
+            <div v-cloak class="flex items-center justify-end flex-grow">
+                <div id="docs-mobile-search-button"></div>
+                <doc-search-desktop></doc-search-desktop>
+
+                <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                <doc-history></doc-history>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <div class="container relative flex bg-white">
+        <!-- Sidebar Skeleton -->
+<div v-cloak class="fixed flex flex-col flex-shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
+
+    <!-- Render this div, if config.showSidebarFilter is `true` -->
+    <div class="flex items-center h-16 px-6">
+        <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter" />
+    </div>
+
+    <div class="pl-6 mb-4 mt-1">
+        <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+    </div>
+
+
+    <div class="flex-shrink-0 mt-auto bg-transparent dark:border-dark-650">
+        <a
+    class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by"
+    target="_blank"
+    href="https://retype.com/"
+    rel="noopener"
+>
+    <span class="text-xs whitespace-nowrap">Powered by</span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+</a>
+
+    </div>
+</div>
+
+<!-- Sidebar component -->
+<doc-sidebar v-cloak>
+    <template #sidebar-footer>
+        <div
+            class="flex-shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-dark-650"
+        >
+
+            <div class="py-3 px-6 md:hidden border-b dark:border-dark-650">
+                <nav>
+                    <ul class="flex flex-wrap justify-center items-center">
+                        <li class="mr-6">
+                            <a class="block py-1 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://retype.com/guides/getting-started/">Getting Started</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+
+            <a
+    class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by"
+    target="_blank"
+    href="https://retype.com/"
+    rel="noopener"
+>
+    <span class="text-xs whitespace-nowrap">Powered by</span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+</a>
+
+        </div>
+    </template>
+</doc-sidebar>
+
+
+        <div class="flex-grow min-w-0 dark:bg-dark-850">
+            <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+            <div class="flex">
+    <div class="flex-grow min-w-0 px-6 md:px-16">
+        <main class="relative pt-6 pb-16">
+            <div class="docs-markdown" id="docs-content">
+                <!-- Rendered if sidebar right is enabled -->
+                <div id="docs-sidebar-right-toggle"></div>
+               
+                <!-- Page content  -->
+<doc-anchor-target id="verde" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#verde">#</doc-anchor-trigger>
+        <span>Verde</span>
+    </h1>
+</doc-anchor-target>
+<ul>
+<li><em>El color de la fertilidad, de la esperanza y de la burguesía.</em></li>
+<li><em>Verde sagrado y verde venenoso.</em></li>
+<li><em>El color intermedio</em></li>
+</ul>
+<doc-anchor-target id="cuántos-verdes-conoce-usted">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#cuántos-verdes-conoce-usted">#</doc-anchor-trigger>
+        <span>¿Cuántos verdes conoce usted?</span>
+    </h2>
+</doc-anchor-target>
+<p><em>Existen nombres del verde en lenguaje coloquial y en la jerga de los pintores estos son algunos de tantos:</em></p>
+<ul>
+<li>Caqui</li>
+<li>Gris oliva</li>
+<li>Tierra verde</li>
+<li>Turquesa</li>
+<li>Umbra verde</li>
+<li>Verde abedul</li>
+<li>Verde abeto</li>
+<li>Verde acuático</li>
+<li>Verde aguacate</li>
+<li>Verde fronda</li>
+<li>Verde grisáceo</li>
+<li>Verde guisante</li>
+<li>Verde helecho</li>
+<li>Verde heliógeno</li>
+<li>Verde hiedra</li>
+<li>Verde hiel</li>
+<li>Verde hierba</li>
+<li>Verde hoja</li>
+</ul>
+<p><em>Estos son algunos nombres del verde en lenguaje coloquial y en la jerga de los pintores, sin embargo, a muchos artistas les basta el hacer uso del “verde de oxido de cromo vivo” y el “Verde de óxido de cromo apagado”.</em></p>
+<doc-anchor-target id="1-verde-bonito-y-verde-feo">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#1-verde-bonito-y-verde-feo">#</doc-anchor-trigger>
+        <span>1. Verde bonito y verde feo</span>
+    </h2>
+</doc-anchor-target>
+<p><em>El verde es el color preferido del 16% de los hombres y el 15% de las mujeres, esta preferencia aumenta con la edad, sobre todo en los hombres se estima que es hasta los 25 años de edad, el 12% de los hombres cita el verde como su color favorito.</em></p>
+<p><em>El verde es mas que un color, el verde es la quintaesencia de la naturaleza, es una ideología, un estilo de vida: es conciencia medioambiental, amor a la naturaleza y, al mismo tiempo, rechazo de una sociedad dominada por la tecnología.</em></p>
+<p><em>Es una mezcla de azul y amarillo, aunque en todas las teorías antiguas de los colores se consideraba un color primario, el verde es un color muy independiente ya que con una solo pizca de azul convierte el amarillo en verde. En cambio, el verde contiene todos los colores:</em></p>
+<ul>
+<li>Blanco</li>
+<li>Negro</li>
+<li>Marrón</li>
+<li>Rojo</li>
+</ul>
+<doc-anchor-target id="el-color-intermedio">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#el-color-intermedio">#</doc-anchor-trigger>
+        <span>El color intermedio.</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="agradable">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#agradable">#</doc-anchor-trigger>
+        <span><em>Agradable</em></span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>1 puesto</th>
+<th>2 puesto</th>
+<th>3 puesto</th>
+<th>4 puesto</th>
+<th>5 puesto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Verde 22%</td>
+<td>Azul 20%</td>
+<td>Naranja 14%</td>
+<td>Amarillo 12%</td>
+<td>Rosa 8%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="tolerancia">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#tolerancia">#</doc-anchor-trigger>
+        <span><em>Tolerancia</em></span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>1 puesto</th>
+<th>2 puesto</th>
+<th>3 puesto</th>
+<th>4 puesto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Verde 22%</td>
+<td>Azul 20%</td>
+<td>Blanco 17%</td>
+<td>Violeta 14%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><em>La combinación verde-azul domina en los acordes correspondientes a todas las cualidades positivas, aquellas que no permiten ningun grito, las que se basan en un tranquilo acuerdo: verde y azul son los colores principales de lo agradable y de la tolerancia.</em></p>
+<p><em>Los astrólogos asignan el verde a los nacidos bajo el signo de Libra. Como éstos son especiamente equilibrados y buscan siempre, diplomaticamente, la armonia, el color que les conviene es el color del termino medio, el color tranquilizador.</em></p>
+<doc-anchor-target id="la-naturaleza-y-lo-natural">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#la-naturaleza-y-lo-natural">#</doc-anchor-trigger>
+        <span>La naturaleza y lo natural</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="natural">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#natural">#</doc-anchor-trigger>
+        <span><em>Natural</em></span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>1 puesto</th>
+<th>2 puesto</th>
+<th>3 puesto</th>
+<th>4 puesto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Verde 47%</td>
+<td>Blanco 18%</td>
+<td>Marrón 12%</td>
+<td>Azul 9%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><em>El empleo del verde como simbolo de la naturaleza muentra la perspectiva de la civilización. sólo los habitantes de las ciudades hacer excursiones al &quot;verde campo&quot; y llaman a algun bosque  el &quot;pulmon verde&quot;: Solo en las ciudades hay &quot;zonas&quot;, &quot;áreas&quot; o &quot;espacios verdes&quot; administrados por los concejales de medio ambiente.</em></p>
+<doc-anchor-target id="el-color-de-la-vida-y-la-salud">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#el-color-de-la-vida-y-la-salud">#</doc-anchor-trigger>
+        <span>El color de la vida y la salud</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="vivacidad">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#vivacidad">#</doc-anchor-trigger>
+        <span><em>Vivacidad</em></span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>1 puesto</th>
+<th>2 puesto</th>
+<th>3 puesto</th>
+<th>4 puesto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Verde 32%</td>
+<td>Amarillo 20%</td>
+<td>Naranja 18%</td>
+<td>Rojo 12%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="sano">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#sano">#</doc-anchor-trigger>
+        <span><em>Sano</em></span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>1 puesto</th>
+<th>2 puesto</th>
+<th>3 puesto</th>
+<th>4 puesto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Verde 40%</td>
+<td>Rojo 20%</td>
+<td>Azul 11%</td>
+<td>Naranja 10%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><em>El color verde es símbolo de la vida en el sentido más amplio, es decir, no sólo referido al hombre, sino también a todo lo que crece.</em></p>
+<p><em>El verde es el color de la vida vegetativa como el rojo es el color de la vida animal, el acorde verde-rojo simboliza la vitalidad máxima.</em></p>
+<doc-anchor-target id="la-inmadurez-y-la-juventud">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#la-inmadurez-y-la-juventud">#</doc-anchor-trigger>
+        <span>La inmadurez y la juventud</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="juventud">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#juventud">#</doc-anchor-trigger>
+        <span><em>Juventud</em></span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>1 puesto</th>
+<th>2 puesto</th>
+<th>3 puesto</th>
+<th>4 puesto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Verde 22%</td>
+<td>Amarillo 16%</td>
+<td>Rosa 13%</td>
+<td>Blanco 12%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><em>El verde es el color de la juventud, un joven que aun esta &quot;verde&quot; es aquel cuyas formas de pensar son como la &quot;fruta verde&quot;, o como el mosto que aun no ha fermentado.</em></p>
+<doc-anchor-target id="el-color-del-amor-incipiente-de-venus-y-de-tauro">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#el-color-del-amor-incipiente-de-venus-y-de-tauro">#</doc-anchor-trigger>
+        <span>El color del amor incipiente, de Venus y de Tauro</span>
+    </h2>
+</doc-anchor-target>
+<p><em>También los sentimientos crecen, se desarrollan. En la poesía trovadoresca, el comienzo del amor es verde.</em>
+<em>Venus corresponde al signo de Tauro, por eso la mayoria de los astrólogos asigna a Tauro el color verde.</em></p>
+<doc-anchor-target id="la-esperanza-es-verde">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#la-esperanza-es-verde">#</doc-anchor-trigger>
+        <span>La esperanza es verde</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="esperanza--confianza">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#esperanza--confianza">#</doc-anchor-trigger>
+        <span><em>Esperanza / Confianza</em></span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>1 puesto</th>
+<th>2 puesto</th>
+<th>3 puesto</th>
+<th>4 puesto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Verde 48%</td>
+<td>Azul 18%</td>
+<td>Amarillo 12%</td>
+<td>Plata 5%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><em>La idea de la verde esperanza permanece viva porque esta emparentada con la experiencia de la primavera.</em></p>
+<doc-anchor-target id="el-color-sagrado-del-islam">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#el-color-sagrado-del-islam">#</doc-anchor-trigger>
+        <span>El color sagrado del Islam</span>
+    </h2>
+</doc-anchor-target>
+<p><em>El color favorito dle profeta Mahoma (570- 632) era el verde, Mahoma llevaba un manto y un turbante verde.</em></p>
+<p><em>La más valiosa reliquia del ismal es el sandshak-i-sherif, la bandera santa, que es verde y está bprdada en oro. es la bandera que el profeta llevó a la guerra que concluyó con la conquista de la meca.</em></p>
+<p><em>Verde es el color del profeta, el color del Islam y el color de la liga Árabe.</em></p>
+<doc-anchor-target id="verde-masculino-y-verde-femenino">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#verde-masculino-y-verde-femenino">#</doc-anchor-trigger>
+        <span>Verde masculino y verde femenino</span>
+    </h2>
+</doc-anchor-target>
+<p><em>Los simbolos dependen de la cultura, porque en las diferentes culturas se dan diferencias modos de vivir.</em></p>
+<p><em>Existen multitud de nombres de mujeres &quot;verdes, &quot;flora&quot; es la diosa romana de las flores y las plantas. &quot;silvia&quot; significa &quot;selva&quot; o &quot;bosque&quot; en latin.</em></p>
+<p><em>Pero el verde es tan equilibrado, que tambien hay numerosos nombres &quot;verdes&quot; de varon: de laurus, laurel en latín, que proceden los nombres &quot;laurin&quot;, &quot;lorenzo&quot; y &quot;lars&quot;, &quot;Florián&quot; es la forma masculina de flora, &quot;Oliver&quot; es olivo.</em></p>
+<doc-anchor-target id="el-verde-litúrgico-de-la-iglesia-católica-y-el-verde-del-espiritu-santo">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#el-verde-litúrgico-de-la-iglesia-católica-y-el-verde-del-espiritu-santo">#</doc-anchor-trigger>
+        <span>El verde litúrgico de la iglesia católica y el verde del Espiritu Santo.</span>
+    </h2>
+</doc-anchor-target>
+<p><em>En 1570, el Papa pío V estableció los colores liturgicos: blanco, rojo, violeta y verde. Éstos son los colores de los sacerdotes en la misa y los que adornan el altar y el púlpito.</em></p>
+<p><em>Entre los colores litúrgicos, el verde es el más modesto y elemental: es el color de todos los dias, de los dias en que no se celebra ni conmemora nada en particular.</em></p>
+<p><em>El rojo, el azul y el verde son los colores de la trinidad: en esta coordinación, el rojo es el color simbólico de Dios padre, el azul el de Cristo, y el verde el del Espiritu Santo.</em></p>
+<doc-anchor-target id="verde-masculino-y-verde-femenino-1">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#verde-masculino-y-verde-femenino-1">#</doc-anchor-trigger>
+        <span>Verde masculino y verde femenino</span>
+    </h2>
+</doc-anchor-target>
+<p>Preguntarse cuál es el significado del verde es plantearse al mismo tiempo interrogantes acerca de las circunstancias vitales.
+En medio del desierto, la naturaleza verde es grandiosa, y el color verde equivale a bienestar material y espiritual. Como color sagrado del Islam, como color de la vida eterna, el verde es, por supuesto, masculino.</p>
+<p>También para los antiguos egipcios el verde era masculino.</p>
+<p>El verde es femenino en cuanto color de la profana naturaleza.</p>
+<doc-anchor-target id="el-verde-litúrgico-de-la-iglesia-católica-y-el-verde-del-espíritu-santo">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#el-verde-litúrgico-de-la-iglesia-católica-y-el-verde-del-espíritu-santo">#</doc-anchor-trigger>
+        <span>El verde litúrgico de la Iglesia católica y el verde del Espíritu Santo</span>
+    </h2>
+</doc-anchor-target>
+<p>El papa Pío V estableció los colores litúrgicos: blanco, rojo, violeta y verde. Éstos son los colores de los sacerdotes en la misa y los que adornan el altar y el púlpito.</p>
+<p>Entre los colores litúrgicos, el verde es el más modesto y elemental; es el color de todos los días, de los días en que no se celebra ni conmemora nada en particular.</p>
+<p>El rojo, el azul y el verde son los colores de la Trinidad: en esta coordinación, el rojo es el color simbólico de Dios Padre, el azul el de Cristo, y el verde el del Espíritu Santo.</p>
+<doc-anchor-target id="el-verde-venenoso">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#el-verde-venenoso">#</doc-anchor-trigger>
+        <span>El verde venenoso</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="lo-venenoso">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lo-venenoso">#</doc-anchor-trigger>
+        <span><em>Lo venenoso</em></span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>1er puesto</th>
+<th>2do puesto</th>
+<th>3er puesto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>verde, 45%</td>
+<td>amarillo, 20%</td>
+<td>violeta, 8%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Verde es el color de lo venenoso. También el color de lo saludable.</p>
+<blockquote>
+<p>El alemán coloquial usa una palabra compuesta de &quot;verde&quot; y &quot;veneno&quot;, Giftgriin, algo que no se encuentra en otros idiomas.</p>
+</blockquote>
+<p>El verde de los pintores se convirtió en el color del veneno. Desde la antigüedad se conocía un verde luminoso hecho con limaduras de cobre. Éste era el color que usaban los pintores. Es un verde intenso, al que se le llama &quot;verde de cobre&quot; y es tóxico.</p>
+<doc-anchor-target id="el-verde-horripilante">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#el-verde-horripilante">#</doc-anchor-trigger>
+        <span>El verde horripilante</span>
+    </h2>
+</doc-anchor-target>
+<blockquote>
+<p>El verde es el color más &quot;inhumano&quot;. Un ser con piel verde no puede ser humano;</p>
+</blockquote>
+<p>tampoco puede ser un mamífero, pues no hay ningún mamífero verde. Una piel verde nos hace pensar en serpientes y lagartos, animales repulsivos para muchos, o en dragones y criaturas mitológicas.</p>
+<p>Verdes son también las criaturas de ficción más modernas. Los marcianos son supuestamente hombrecillos verdes.
+El diablo ha sido con frecuencia representado como un híbrido de serpiente y dragón.
+En nuestra fantasía, los seres demoniacos tienen ojos verdes. Los demonios de Europa suelen ser verdes y negros.
+El verde, el color de la vida, combinado con el negro, forma el acorde de la destrucción.
+El amarillo y el verde son los colores de la bilis.
+En inglés, el verde está muy ligado a la envidia.
+En Francia, el verde es para los supersticiosos un color que trae mala suerte.
+Entre los alemanes es el verde el color más nombrado en referencia a la ira.</p>
+<doc-anchor-target id="el-color-burgués">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#el-color-burgués">#</doc-anchor-trigger>
+        <span>El color burgués</span>
+    </h2>
+</doc-anchor-target>
+<p>El rojo era el color de la nobleza, y el verde el de la burguesía, y aún para ésta había diferencias: verde escaso, verde claro y verde oscuro para los burgueses pobres, y verde puro para los más ricos.</p>
+<p>En los antiguos retratos, un fondo verde indicaba que el retratado era un burgués. El verde era el color que indentificaba a todo lo burgués.</p>
+<p>En la cámara baja británica -el Parlamento elegido por el pueblo-, los asientos son verdes. En la cámara alta, la de los lores, son rojos.</p>
+<doc-anchor-target id="por-qué-se-cree-que-el-verde-y-el-azul-no-armonizan">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#por-qué-se-cree-que-el-verde-y-el-azul-no-armonizan">#</doc-anchor-trigger>
+        <span>¿Por qué se cree que el verde y el azul no armonizan?</span>
+    </h2>
+</doc-anchor-target>
+<blockquote>
+<p>El verde y el azul no armonizan: &quot;se muerden&quot;, como se dice en alemán.</p>
+</blockquote>
+<blockquote>
+<p>La combinación de azul y verde en la vestimenta denota falta de gusto, dicen los &quot;consejeros&quot;</p>
+</blockquote>
+<p>¿Cómo se llegó a estas reglas del gusto?</p>
+<p>La teoría de los colores de Goethe puede darnos una explicación al respecto.
+En su teoría, Goethe utilizaba un círculo de colores para &quot;simbolizar la vida del espíritu y del alma humanos&quot;. En ese círculo coordinaba los colores con categorías intelectuales - la razón, el entendimiento, el sentimiento o la fantasía- y con categorías morales - lo bello, lo noble o lo útil-.</p>
+<p>El verde es el color de los burgueses -Goethe lo llama el color de lo &quot;útil&quot;-, como los comerciantes, los artesanos y los empleados.
+El azul es el color de los trabajadores -Goethe lo llama <em>gemein</em>, una palabra antigua para &quot;corriente, ordinario&quot;-. Entre burgueses y trabajadores siempre eran posibles las relaciones sociales y matrimoniales, aunque, naturalmente, eran mal aceptadas por la clase burguesa que procuraba distanciarse de los trabajadores mostrando sus diferencias -¡por ese motivo no armonizan el azul y el verde!-</p>
+<ul>
+<li>El color de la fertilidad, de la esperanza y de la burguesía.</li>
+<li>Verde sagrado y verde venenoso.</li>
+<li>El color intermedio.</li>
+</ul>
+<doc-anchor-target id="el-extravagante-vestido-de-seda-verde">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#el-extravagante-vestido-de-seda-verde">#</doc-anchor-trigger>
+        <span>El extravagante vestido de seda verde.</span>
+    </h3>
+</doc-anchor-target>
+<p>En 1863, el químico Eugen Lucius produjo un colorante verde intenso al que bautizó con un nombre basado en su estructura química: verde aldehído.</p>
+<p>Gracias a que la emperatriz Eugenia, esposa de Napoleón III, considerada como la mujer mas bella de ese entonces, utilizó un elegante vestido de seda de color verde aldehído logró que ese color prodicido por Eugen causara sensación y se puso de moda.</p>
+<p>Después de ese exito, la empresa del químico Eugen puso en el mercado muchos tintes verdes, entre los cuales existian unos bastante tóxicos.</p>
+<doc-anchor-target id="el-color-tranquilizante">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#el-color-tranquilizante">#</doc-anchor-trigger>
+        <span>El color tranquilizante.</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Significado</th>
+<th>1er puesto</th>
+<th>2do puesto</th>
+<th>3er puesto</th>
+<th>4to puesto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lo tranquilizador</td>
+<td>verde 38%</td>
+<td>azul 24%</td>
+<td>blanco 8%</td>
+<td>marrón 6%</td>
+</tr>
+<tr>
+<td>El recogimiento</td>
+<td>verde 24%</td>
+<td>marrón 20%</td>
+<td>azul 19%</td>
+<td>rojo 9%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<p>&quot;No se quiere más y no se puede más. Por eso, para las habitaciones en las que más tiempo se está, el color verde es el más elegido para las paredes.&quot; -Goete</p>
+</blockquote>
+<p>En los teatros ingleses, los camerinos de los actores son siempre de color verde, por eso se llaman <em>greenrooms</em>.</p>
+<p>El verde es el color más tranquilizante, es el color de lo que alivia y de lo acogedor.</p>
+<doc-anchor-target id="el-color-de-la-libertad-y-de-los-irlandeses">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#el-color-de-la-libertad-y-de-los-irlandeses">#</doc-anchor-trigger>
+        <span>El color de la libertad y de los irlandeses.</span>
+    </h3>
+</doc-anchor-target>
+<p>En el siglo XIX, el verde se convirtió en el color de los movimientos burgueses contraios al dominio absolutista. La libertad era verde.</p>
+<p>La bandera verde, blanca y roja se inspiró en la bandera tricolor francesa. El rojo y blanco eran los antiguos colores de italia, y el verde simbolizaba &quot;el derecho del hombre a la libertat y la igualdad&quot;.</p>
+<p>En Irlanda, el color verde tiene un significado especial. Es el color nacional de la &quot;isla verde&quot;.</p>
+<p>El símbolo de Irlanda es la oja de trébol con la que san Patricio explicó a los irlandeses la trinidad de Padre, Hijo y Espiritu Santo.</p>
+<doc-anchor-target id="servir-al-palo-sobre-el-tapete-verde">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#servir-al-palo-sobre-el-tapete-verde">#</doc-anchor-trigger>
+        <span>Servir al palo* sobre el tapete verde.</span>
+    </h3>
+</doc-anchor-target>
+<p>El verde corresponde a la pica francesa.</p>
+<p>La frase &quot;lo mismo en verde&quot; hace referencia a la diferencia entre cartas francesas y alemanas (diferencia que no cambia nada).</p>
+<p>La expresión alemana &quot;Auch, du grüne Neume!&quot;(¡Vaya, un nueve verde!) empleada para expresar sorpresa, procede tambien de los jueves de carta.</p>
+<p>Cuando aun no había televisión, todas las casas burguesas tenían una mesa de juego en las que jugaban a las cartas y los dados. Estas mesas estaban tapizadas de fieltro verde.</p>
+<doc-anchor-target id="el-verde-funcional">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#el-verde-funcional">#</doc-anchor-trigger>
+        <span>El verde funcional.</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Significado</th>
+<th>1er puesto</th>
+<th>2do puesto</th>
+<th>3er puesto</th>
+<th>4to puesto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>La confianza/ la seguridad</td>
+<td>verde 27%</td>
+<td>azul 22%</td>
+<td>blanco 10%</td>
+<td>marrón 9%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Los semaforos son importantes en la vida moderna y por eso su simbolismo a sido generalizado.</p>
+<p>Las salidas de emergencia son generalmente flechas blancas sobre fondo verde.</p>
+<p>En alemania se dice que a alguien le ha llegado una &quot;ola verde&quot; cuando tiene una buena racha.</p>
+<p>La <em>greencard</em> es muy ansiada por los inmigrantes ya que da &quot;luz verde&quot; para ir a los Estados Unidos con permiso de residencia y trabajo.</p>
+<p>El color de las pizarras de los colegios es un verde llamado &quot;verde estandar&quot; ya que se considera el tino de verde más adecuado para fijar la vista en el durante largo tiempo.</p>
+<doc-anchor-target id="los-colores-de-las-estaciones-según-itten">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#los-colores-de-las-estaciones-según-itten">#</doc-anchor-trigger>
+        <span>Los colores de las estaciones según Itten.</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="impresion-individual-y-comprensión-universal">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#impresion-individual-y-comprensión-universal">#</doc-anchor-trigger>
+        <span>Impresion individual y comprensión universal.</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Significado</th>
+<th>1er puesto</th>
+<th>2do puesto</th>
+<th>3er puesto</th>
+<th>4to puesto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lo tranquilizador</td>
+<td>verde 38%</td>
+<td>azul 24%</td>
+<td>blanco 8%</td>
+<td>marrón 6%</td>
+</tr>
+<tr>
+<td>El recogimiento</td>
+<td>verde 24%</td>
+<td>marrón 20%</td>
+<td>azul 19%</td>
+<td>rojo 9%</td>
+</tr>
+<tr>
+<td>El recogimiento</td>
+<td>verde 24%</td>
+<td>marrón 20%</td>
+<td>azul 19%</td>
+<td>rojo 9%</td>
+</tr>
+<tr>
+<td>El recogimiento</td>
+<td>verde 24%</td>
+<td>marrón 20%</td>
+<td>azul 19%</td>
+<td>rojo 9%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<p>El artista, profesor y teórico de los colores Johannes Itten tomó los colores de las estaciones como ejemplo de que &quot;las impresiones y vivencias que producen los colores pueden considerarse de una manera perfectamente objetiva aunque cada individuo vea, sienta y juzgue los colores de manera personal&quot;.</p>
+</blockquote>
+
+
+
+
+                <!-- Required only on API pages -->
+                <doc-toolbar-member-filter-no-results />
+            </div>
+
+            
+<nav class="flex mt-14">
+    <div class="w-1/2">
+        <a class="px-5 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/color/rosa/">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+            <span>
+                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                <span class="block mt-1">Rosa</span>
+            </span>
+        </a>
+    </div>
+
+    <div class="w-1/2">
+        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/color/violeta/">
+            <span>
+                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                <span class="block mt-1">Violeta</span>
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+        </a>
+    </div>
+</nav>
+
+
+        </main>
+
+        <div class="border-t dark:border-dark-650 pt-6 mb-8">
+            <footer class="flex flex-wrap items-center justify-between">
+    <div>
+        <ul class="flex flex-wrap items-center text-sm">
+</ul>
+
+    </div>
+    <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2022. All rights reserved.</p>
+</div>
+</footer>
+
+        </div>
+    </div>
+    
+    <!-- Rendered if sidebar right is enabled -->
+    <!-- Sidebar right skeleton-->
+    <div v-cloak class="fixed top-0 bottom-0 right-0 transform translate-x-full bg-white border-gray-200 lg:sticky lg:border-l lg:flex-shrink-0 lg:pt-6 lg:transform-none lg:w-56 lg:z-0 md:w-72 sidebar-right skeleton dark:bg-dark-850 dark:border-dark-650">
+        <div class="pl-5">
+            <div class="w-32 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+            <div class="w-48 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+            <div class="w-40 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+        </div>
+    </div>
+    
+    <!-- User should be able to hide sidebar right -->
+    <doc-sidebar-right v-cloak></doc-sidebar-right>
+</div>
+
+        </div>
+    </div>
+
+    <doc-search-mobile></doc-search-mobile>
+    <doc-back-to-top></doc-back-to-top>
+</div>
+
+
+        <div id="docs-overlay-target"></div>
+
+        <script>window.__DOCS__ = { "title": "Verde", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    </body>
+</html>
