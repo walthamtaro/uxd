@@ -117,4 +117,4 @@ Generar bocetos rápidos son útiles, algunos servirán para presentar la idea n
 
 Descarga el documento con las ideas, bocetos y moodboard del proyecto.
 
-[!file](../../../archivos/mockups.pdf)
+[!file](../../archivos/mockups.pdf)
