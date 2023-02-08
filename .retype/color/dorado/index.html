@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="turbo-cache-control" content="no-cache">
+
+    <!-- Primary Meta Tags -->
+    <title>Dorado</title>
+    <meta name="title" content="Dorado">
+    <meta name="description" content="N|Solid" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/color/dorado/">
+    <meta property="og:title" content="Dorado">
+    <meta property="og:description" content="N|Solid">
+    <meta property="og:image" content="https://www.thermofisher.com/blog/cienciaacelerada/wp-content/uploads/sites/17/2020/05/oro-blog-1.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="/color/dorado/">
+    <meta property="twitter:title" content="Dorado">
+    <meta property="twitter:description" content="N|Solid">
+    <meta property="twitter:image" content="https://www.thermofisher.com/blog/cienciaacelerada/wp-content/uploads/sites/17/2020/05/oro-blog-1.jpg">
+    
+    <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
+
+    <link href="/resources/css/retype.css?v=1.11.2.702071033145" rel="stylesheet" data-turbo-track="reload" />
+
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.702071033145" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.702071033145" defer></script>
+</head>
+    <body>
+        <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
+    <div class="absolute bottom-0 left-0 bg-gray-100 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
+
+    <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
+    <div class="container relative flex items-center justify-between flex-grow pr-6 md:justify-start">
+        <!-- Mobile menu button skeleton -->
+        <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center flex-shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px flex-shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+        <div v-cloak id="docs-sidebar-toggle"></div>
+
+        <!-- Logo -->
+        <div class="flex items-center justify-between h-full py-2 md:w-75">
+            <div class="flex items-center px-2 md:px-6">
+                <a id="docs-site-logo" href="/" class="flex items-center leading-snug text-xl">
+                    <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Tópicos de UXD</span>
+                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
+            </div>
+
+            <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
+        </div>
+
+        <div class="flex justify-between md:flex-grow">
+            <!-- Top Nav -->
+            <nav class="hidden md:flex">
+    <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+        <li class="md:mr-6">
+            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://retype.com/guides/getting-started/">Getting Started</a>
+        </li>
+    </ul>
+</nav>
+
+            <!-- Header Right Skeleton -->
+            <div v-cloak class="flex justify-end flex-grow skeleton">
+
+                <!-- Search input mock -->
+                <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
+                    <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                    </div>
+
+                    <input class="w-full h-10 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 placeholder-gray-400 dark:placeholder-dark-400"
+                    style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search" />
+                </div>
+
+                <!-- Mobile search button mock -->
+                <div class="flex items-center justify-center w-10 h-10 lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                </div>
+
+                <!-- Dark mode switch placehokder -->
+                <div class="w-10 h-10 lg:ml-2"></div>
+
+                <!-- History button mock -->
+                <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
+                </div>
+            </div>
+
+            <div v-cloak class="flex items-center justify-end flex-grow">
+                <div id="docs-mobile-search-button"></div>
+                <doc-search-desktop></doc-search-desktop>
+
+                <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                <doc-history></doc-history>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <div class="container relative flex bg-white">
+        <!-- Sidebar Skeleton -->
+<div v-cloak class="fixed flex flex-col flex-shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
+
+    <!-- Render this div, if config.showSidebarFilter is `true` -->
+    <div class="flex items-center h-16 px-6">
+        <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter" />
+    </div>
+
+    <div class="pl-6 mb-4 mt-1">
+        <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+    </div>
+
+
+    <div class="flex-shrink-0 mt-auto bg-transparent dark:border-dark-650">
+        <a
+    class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by"
+    target="_blank"
+    href="https://retype.com/"
+    rel="noopener"
+>
+    <span class="text-xs whitespace-nowrap">Powered by</span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+</a>
+
+    </div>
+</div>
+
+<!-- Sidebar component -->
+<doc-sidebar v-cloak>
+    <template #sidebar-footer>
+        <div
+            class="flex-shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-dark-650"
+        >
+
+            <div class="py-3 px-6 md:hidden border-b dark:border-dark-650">
+                <nav>
+                    <ul class="flex flex-wrap justify-center items-center">
+                        <li class="mr-6">
+                            <a class="block py-1 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://retype.com/guides/getting-started/">Getting Started</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+
+            <a
+    class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by"
+    target="_blank"
+    href="https://retype.com/"
+    rel="noopener"
+>
+    <span class="text-xs whitespace-nowrap">Powered by</span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+</a>
+
+        </div>
+    </template>
+</doc-sidebar>
+
+
+        <div class="flex-grow min-w-0 dark:bg-dark-850">
+            <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+            <div class="flex">
+    <div class="flex-grow min-w-0 px-6 md:px-16">
+        <main class="relative pt-6 pb-16">
+            <div class="docs-markdown" id="docs-content">
+                <!-- Rendered if sidebar right is enabled -->
+                <div id="docs-sidebar-right-toggle"></div>
+               
+                <!-- Page content  -->
+<doc-anchor-target id="dorado" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#dorado">#</doc-anchor-trigger>
+        <span>Dorado</span>
+    </h1>
+</doc-anchor-target>
+<doc-anchor-target id="el-color-de-la-felicidad">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#el-color-de-la-felicidad">#</doc-anchor-trigger>
+        <span><em>El color de la felicidad</em></span>
+    </h2>
+</doc-anchor-target>
+<p><figure class="content-center">
+    <a href="https://www.penoles.com.mx/productos/oro.html">
+        <img src="https://www.thermofisher.com/blog/cienciaacelerada/wp-content/uploads/sites/17/2020/05/oro-blog-1.jpg" alt="N|Solid" />
+    </a>
+    <figcaption class="caption">N|Solid</figcaption>
+</figure>
+</p>
+<doc-anchor-target id="oro-mucho-mas-que-un-color">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#oro-mucho-mas-que-un-color">#</doc-anchor-trigger>
+        <span><em>¿Oro mucho mas que un color?</em></span>
+    </h2>
+</doc-anchor-target>
+<p>solo el 1% de las mujeres nombran el oro como su color favorito. Entre los hombres, ninguno lo tiene como tal. el 2% de las mijeres y el 3% de los hombres declaran que el oro es su color que menos les gusta.</p>
+<doc-anchor-target id="como-se-obtiene-el-oro">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#como-se-obtiene-el-oro">#</doc-anchor-trigger>
+        <span><em>¿Como Se obtiene el Oro?</em></span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>En las minas. Alli se encuentran los mayores modulos.</li>
+<li>En rios. El oro aluvia u oro de las montañas, arrastrado por los rios junto con los cantos y la</li>
+<li>En plantas industriales. Actualmente. la mayor parte del oro que vemos -alrededor del 80%- se obtiene por procesos quimicos.</li>
+<li></li>
+</ul>
+<doc-anchor-target id="cifras-de-produccion-anual">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#cifras-de-produccion-anual">#</doc-anchor-trigger>
+        <span><em>Cifras de Produccion Anual</em></span>
+    </h2>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Epoca</th>
+<th>Toneladas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1500</td>
+<td>6 Toneladas</td>
+</tr>
+<tr>
+<td>1600</td>
+<td>7 Toneladas</td>
+</tr>
+<tr>
+<td>1700</td>
+<td>11 Toneladas</td>
+</tr>
+<tr>
+<td>1800</td>
+<td>18 Toneladas</td>
+</tr>
+<tr>
+<td>1850</td>
+<td>55 Toneladas</td>
+</tr>
+<tr>
+<td>1855</td>
+<td>200 Toneladas</td>
+</tr>
+<tr>
+<td>1900</td>
+<td>390 Toneladas</td>
+</tr>
+<tr>
+<td>1930</td>
+<td>600 Toneladas</td>
+</tr>
+<tr>
+<td>1965</td>
+<td>1450 Toneladas</td>
+</tr>
+<tr>
+<td>1987</td>
+<td>3000 Toneladas</td>
+</tr>
+<tr>
+<td>2000</td>
+<td>4000 Toneladas</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><figure class="content-center">
+    <img src="https://deresiduos.s3.amazonaws.com/uploads/news/image/10250/large_3607365518_ef7ce53228_b.jpg" alt="N|Solid" />
+    <figcaption class="caption">N|Solid</figcaption>
+</figure>
+</p>
+<doc-anchor-target id="simbolo-de-la-felicidad">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#simbolo-de-la-felicidad">#</doc-anchor-trigger>
+        <span><em>simbolo de la Felicidad</em></span>
+    </h2>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>1 er puesto</th>
+<th>2do puesto</th>
+<th>3er puesto</th>
+<th>4to puesto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Oro 28%</td>
+<td>Rojo 15%</td>
+<td>Verde 15%</td>
+<td>Amarillo 13%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>-El color oro forma con el rojo y el verde el corde de la felicidad, pues el dinero, el amor Y la salud constituyen la felicidad.</p>
+<p>[Oro][df1] y [Dinero][df1] son conceptos inseparables. En alemania es evidente su comunidad:</p>
+<blockquote>
+<p>[Gold][df1]  [oro] y [Geld][df1] [dinero] y de la antigua palabra &quot;dorado&quot; (Gülden). procede el nombre Gülden, &quot;florin&quot;.
+Muchos paices tenian como moneda la &quot;corona&quot; y una corona real siempre es de oro.
+.</p>
+</blockquote>
+<doc-anchor-target id="brillo-de-la-fama">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#brillo-de-la-fama">#</doc-anchor-trigger>
+        <span><em>Brillo de la Fama</em></span>
+    </h2>
+</doc-anchor-target>
+<p><figure class="content-center">
+    <img src="https://png.clipart.me/istock/previews/6114/61148948-illuminated-stage-podium-for-award-ceremony-vector-illustration.jpg" alt="N|Solid" />
+    <figcaption class="caption">N|Solid</figcaption>
+</figure>
+</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Orgullo</th>
+<th>Merito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Oro 24%</td>
+<td>Azul 20%</td>
+</tr>
+<tr>
+<td>Azul 14%</td>
+<td>Oro 18%</td>
+</tr>
+<tr>
+<td>Rojo 12%</td>
+<td>Rojo 16%</td>
+</tr>
+<tr>
+<td>Plata 11%</td>
+<td>Plata 8%</td>
+</tr>
+<tr>
+<td>Blanco 10%</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>El color de la fama es el oro. El vencedor recibe una medalla de oro. la mas alta distinción alemana por los meritos sociales es la cruz federal al merito civil, y esta cruz es de oro.</p>
+<doc-anchor-target id="el-oro-de-los-alquimistas">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#el-oro-de-los-alquimistas">#</doc-anchor-trigger>
+        <span><em>El Oro de los Alquimistas</em></span>
+    </h2>
+</doc-anchor-target>
+<p><a href="https://lafinestrablog.com/2015/04/04/el-oro-interno-de-los-alquimistas/">lafinestrablog.com</a> El oro sale de las piedras de eso estaban convencido los alquimistas, pues donde hay oro, hay piedras, en las rocas de las montañas se forman núdos de oro, y en el lecho del rio se encuentran pepitas de oro.</p>
+<p>La piedra capas de tranformar todo en Oro.</p>
+<div class="flex mb-6">
+    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3">
+<p>&quot;la piedra filosofal&quot;</p>
+        </div>
+    </div>
+</div>
+<p><figure class="content-center">
+    <img src="https://josecarlosfernandezromero.files.wordpress.com/2014/11/piedra-filosofal.jpg" alt="N|Solid" />
+    <figcaption class="caption">N|Solid</figcaption>
+</figure>
+</p>
+<p>Los que creian en la piedra filosofal no eran simples especuladores o locos. los individuos mas inteligentes de todas la naciones lo buscaban, y solo a los sabio o religiosos se les pudo ocurrir llamar a la piedra que traia todas las riquezas.</p>
+<doc-anchor-target id="oro-amarillo-rojo-blanco-y-verde">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#oro-amarillo-rojo-blanco-y-verde">#</doc-anchor-trigger>
+        <span><em>Oro amarillo, rojo, blanco y verde</em></span>
+    </h2>
+</doc-anchor-target>
+<p>como la pureza del oro se expresa en tanto por mil. el oro puro tendra que aparecer sellado con un 1000. pero incluso el oro refinado nunca es prefectamente puro, y el oro mas puro, el oro de lingote, tiene marcadas las sifras de 999 o 999,9 en el llamdo contraste.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Marca</th>
+<th>Quilates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Marca 333</td>
+<td>[8 Quilates][PlDb]</td>
+</tr>
+<tr>
+<td>Marca 585</td>
+<td>[14 Quilates][PlGh]</td>
+</tr>
+<tr>
+<td>Marca 750</td>
+<td>[18 Quilates][PlGd]</td>
+</tr>
+<tr>
+<td>Marca 999</td>
+<td>[24 quilates][plGd]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="por-qué-es-preferido">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#por-qué-es-preferido">#</doc-anchor-trigger>
+        <span>por qué es preferido?</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>Esto no es un ninguna contradicción, pues es un color preferido este es preferido bajo muchos aspectos, y la belleza en si es solo un aspecto.</li>
+<li>No todo lo que que se asocia al oro es pocitivo.</li>
+<li>El oro tambien es demaciodo materialista y demaciado arrogante.</li>
+</ul>
+<doc-anchor-target id="sabias-que">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#sabias-que">#</doc-anchor-trigger>
+        <span><em>¿Sabias que?</em></span>
+    </h2>
+</doc-anchor-target>
+<div class="flex mb-6">
+    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3">
+<p>los egipcios explotaron hace ya 7,000 años minas de oro. En su lengua &quot;nub&quot; significa &quot;oro&quot;, y nubia era el pais del oro para los egiptos.</p>
+        </div>
+    </div>
+</div>
+<doc-anchor-target id="el-color-de-la-belleza-los-trajes-de-color-oro">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#el-color-de-la-belleza-los-trajes-de-color-oro">#</doc-anchor-trigger>
+        <span>El color de la belleza. Los trajes de color oro</span>
+    </h2>
+</doc-anchor-target>
+<p>En todo ambiente pomposo el color dominante es el color dorado. Los brocados, el lurex y el lamé oro están reservadosa las fiestas. en la actualidad sólo las mujeres visten trajes dorados, pero en otros tiempos, cuando los hilos erán de auténtico oro, también los hombres llevaban trajes dorados en cualquier ocasión.</p>
+<doc-anchor-target id="belleza">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#belleza">#</doc-anchor-trigger>
+        <span>Belleza</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>1er puesto</th>
+<th>2do puesto</th>
+<th>3er puesto</th>
+<th>4to puesto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>oro 24%</td>
+<td>blanco 23%</td>
+<td>rojo 9%</td>
+<td>plata 13%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="pompa">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#pompa">#</doc-anchor-trigger>
+        <span>Pompa</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>1er puesto</th>
+<th>2do puesto</th>
+<th>3er puesto</th>
+<th>4to puesto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>oro 57%</td>
+<td>plata 11%</td>
+<td>violeta 8%</td>
+<td>rojo 8%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="solemnidad">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#solemnidad">#</doc-anchor-trigger>
+        <span>Solemnidad</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>1er puesto</th>
+<th>2do puesto</th>
+<th>3er puesto</th>
+<th>4to puesto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>oro 32%</td>
+<td>plata 17%</td>
+<td>blanco 13%</td>
+<td>negro 13%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="el-color-del-lujo">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#el-color-del-lujo">#</doc-anchor-trigger>
+        <span>el color del lujo</span>
+    </h2>
+</doc-anchor-target>
+<p>Para diseñar un articulo de lujo, el principio más sencillo es fabricar con oro un objeto que normalmente se produce con algún material barato. En pocas palabras el color dorado puede convertir cualquier objeto en simbolo de estatus.</p>
+<doc-anchor-target id="lujo">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lujo">#</doc-anchor-trigger>
+        <span>Lujo</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>1er puesto</th>
+<th>2do puesto</th>
+<th>3er puesto</th>
+<th>4to puesto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>oro 38%</td>
+<td>plata 13%</td>
+<td>rojo 12%</td>
+<td>negro 8%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="el-becerro-de-oro-y-el-ganso-de-oro-el-color-del-deslumbramiento">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#el-becerro-de-oro-y-el-ganso-de-oro-el-color-del-deslumbramiento">#</doc-anchor-trigger>
+        <span>El becerro de oro y el ganso de oro: el color del deslumbramiento.</span>
+    </h2>
+</doc-anchor-target>
+<p>El &quot;becerro de oro&quot; es el simbolo biblico del ofuscamiento, de la creencia en falsos dioses. El becerro representa al Dios Baal, y Moises lo destruye; aniquila incluso el oro</p>
+<blockquote>
+<p>&quot;y tomo el becerro que habían hecho, y lo arrojo al fuego, donde se fundio y pulverizo el oro, y lo esparció en el agua, que dio de beber a los israelitas&quot; (2 Moises, 32,20).</p>
+</blockquote>
+<p>en el cuento de Grimm del &quot;Ganso de oro&quot;, los tontos se quedan pegados al ganso, las victimas de la comodidad y el lujo viven en una jaula de oro&quot;.</p>
+<blockquote>
+<p>&quot;¿De que sirve una horca de oro cuando se va a morir ahorcado?&quot;</p>
+</blockquote>
+<p>dice la sabiduria del pobre. Que la riqueza arruina el cáracter, es también otro conusuelo: &quot;que el fuego pone a prueba al oro, y el oro pone a prueba a la gente&quot;.</p>
+<p>El oro es el color de la vanidad</p>
+<doc-anchor-target id="el-oro-de-los-pintores">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#el-oro-de-los-pintores">#</doc-anchor-trigger>
+        <span>El oro de los pintores.</span>
+    </h2>
+</doc-anchor-target>
+<p>En la pintura medieval, el oro simboliza la luz supraterrenal. Hasta 1500 fue común el fondo dorado en la pintura de motivos piadosos. Los rusos han conservado hasta hoy el fondo dorado.</p>
+<p>Hoy el oro ha desaparecido de las pinturas, pero sigue estando presente de otra forma: los marcos de los cuadros son en su mayoria dorados.</p>
+<doc-anchor-target id="el-oro-heráldico">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#el-oro-heráldico">#</doc-anchor-trigger>
+        <span>El oro heráldico.</span>
+    </h2>
+</doc-anchor-target>
+<p>En otros tiempos, los documentos importantes se solían sellar, &quot;bula&quot; es una antigua palabra para un documento sellado. Los de importancia especial los sellaba el emperador con oro: era la &quot;bula dorada&quot;. La más importante &quot;bula dorada&quot; del Sacro imperio Romano Germanico es la que hizo redactar el emperador Carlos IV en 1356.</p>
+<p>El oro es el más importante de los colores heráldicos. Todo escudo debe tener oro o plata.</p>
+<p>En Alemania, las señales de carretera que indican una iglesia católica, muestran una iglesia amarilla sobre fondo blanco.</p>
+<doc-anchor-target id="el-color-decorativo">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#el-color-decorativo">#</doc-anchor-trigger>
+        <span>El color decorativo.</span>
+    </h2>
+</doc-anchor-target>
+<p>El oro es un producto natural, pero no un material vivo. solo se lo conoce ya trabajado ya sea por el orfebre, el acuñador de monedas o fundidor.</p>
+<p>El color del oro tambien es uno de los colores de lo artificial.</p>
+<p>En la vida cotidiana, el oro aparece sólo como color decorativo. como color para ciertos de ciertos detalles.</p>
+<doc-anchor-target id="el-oro-enla-publicidad-el-color-de-lo-presuntuoso">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#el-oro-enla-publicidad-el-color-de-lo-presuntuoso">#</doc-anchor-trigger>
+        <span>El oro enla publicidad: el color de lo presuntuoso</span>
+    </h2>
+</doc-anchor-target>
+<p>El poeta ve color oro donde el realista ve sólo amarillo: espigas doradas, uvas doradas. otoño dorado...pero en la poesia actual este estilo se considera anticuado.</p>
+<blockquote>
+<p>&quot;no es oro todo lo que reluce&quot;</p>
+</blockquote>
+<p>este dicho es perfectamente aplicable a la publicidad moderna. En la publicidad, el color oro no expresa ningún valor, sólo es presuntuosidad</p>
+<doc-anchor-target id="presuntuosidad">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#presuntuosidad">#</doc-anchor-trigger>
+        <span>Presuntuosidad</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>1er puesto</th>
+<th>2do puesto</th>
+<th>3er puesto</th>
+<th>4to puesto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>oro 28%</td>
+<td>amarillo 16%</td>
+<td>naranja 16%</td>
+<td>violeta 12%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="las-reglas-del-oro">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#las-reglas-del-oro">#</doc-anchor-trigger>
+        <span>Las reglas del oro</span>
+    </h2>
+</doc-anchor-target>
+<p>El oro , el blanco y el azul forman los acordes de lo ideal, el bien y la verdad. la &quot;regla de oro de la vida&quot; encuentra en la biblia la siguiente formulacion:</p>
+<blockquote>
+<p>&quot;Aquello que queréis que los demás os hagan a vosotros, hacédselo vosotros a ellos&quot; (Lucas, 6,31: Tambien Mateos, 7, 12).</p>
+</blockquote>
+<p>Más conocida es la forma popular negativa &quot;no hagas a los demás lo que no te quieres que te hagan a ti&quot;</p>
+<p>El oro se vende por gramos por eso se usan balanzas muy precisas. De aquel que da mucho valor a las palabras de otro se dice en alemán que &quot;pone las palabras en la balanza de pesar oro&quot;</p>
+<p>El oro es atributo del bien y de lo bueno. En Alemania Goldmarie y Pechmarie son dos personajes de cuentos que representan lo bueno y lo malo. Obviamente Goldmarie es buena y rubia.</p>
+
+
+
+
+                <!-- Required only on API pages -->
+                <doc-toolbar-member-filter-no-results />
+            </div>
+
+            
+<nav class="flex mt-14">
+    <div class="w-1/2">
+        <a class="px-5 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/color/blanco/">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+            <span>
+                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                <span class="block mt-1">Blanco</span>
+            </span>
+        </a>
+    </div>
+
+    <div class="w-1/2">
+        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/color/gris/">
+            <span>
+                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                <span class="block mt-1">Gris</span>
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+        </a>
+    </div>
+</nav>
+
+
+        </main>
+
+        <div class="border-t dark:border-dark-650 pt-6 mb-8">
+            <footer class="flex flex-wrap items-center justify-between">
+    <div>
+        <ul class="flex flex-wrap items-center text-sm">
+</ul>
+
+    </div>
+    <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2022. All rights reserved.</p>
+</div>
+</footer>
+
+        </div>
+    </div>
+    
+    <!-- Rendered if sidebar right is enabled -->
+    <!-- Sidebar right skeleton-->
+    <div v-cloak class="fixed top-0 bottom-0 right-0 transform translate-x-full bg-white border-gray-200 lg:sticky lg:border-l lg:flex-shrink-0 lg:pt-6 lg:transform-none lg:w-56 lg:z-0 md:w-72 sidebar-right skeleton dark:bg-dark-850 dark:border-dark-650">
+        <div class="pl-5">
+            <div class="w-32 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+            <div class="w-48 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+            <div class="w-40 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+        </div>
+    </div>
+    
+    <!-- User should be able to hide sidebar right -->
+    <doc-sidebar-right v-cloak></doc-sidebar-right>
+</div>
+
+        </div>
+    </div>
+
+    <doc-search-mobile></doc-search-mobile>
+    <doc-back-to-top></doc-back-to-top>
+</div>
+
+
+        <div id="docs-overlay-target"></div>
+
+        <script>window.__DOCS__ = { "title": "Dorado", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    </body>
+</html>

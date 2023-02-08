@@ -1,0 +1,11 @@
+input: .
+output: .retype
+url: walthamtaro.github.io
+branding:
+  title: Manual de UXD
+  label: Docs
+links:
+- text: isclab
+  link: http://isclab.com.mx/
+footer:
+  copyright: "&copy; Copyright {{ year }}. MCE Walter Manzanilla MINE. Todos los derechos reservados."
